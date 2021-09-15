@@ -24,10 +24,16 @@ body{
     
 }
 
-.image-area{
-    object-fit: contain;
-    margin: 0 auto;
-    width:50%;
-
+#image-area{
+    padding: 1rem;
+    color: black;
+    width: 99%;
+    left: 0px;
+    right: 0px;
+    text-align: center;
 }
 
+.image{
+    max-width: 80%;
+    margin: 0 auto;
+}
