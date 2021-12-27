@@ -1,0 +1,407 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+
+header {
+    background-color: #f3faea;
+    padding: 1em 0;
+    text-align: center;
+}
+
+img{
+    align-items: flex-start;
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding: 1px;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 100%;
+    align-items: center;
+    margin-top: 4px;
+    color:#e2e2e2
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* border: 3px solid wheat; */
+    
+}
+.nav__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    
+}
+.nav__link{
+    text-decoration: none;
+    color: rgb(32, 33, 37);
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+.nav__link--button{
+    padding: 0.25em 0.75em;
+    border-radius: 50px;
+    background: #a7e072;
+    color:#ececec;
+}
+
+
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    
+} 
+
+
+.nav__list--secondary{
+    margin-top: 1rem;
+}
+
+
+.hero{
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2b4127;
+    color: rgb(222, 235, 225);
+   
+}
+
+.hero-maintext{
+    font-size: 6vmin;
+    margin-top: 2rem;
+
+
+}
+
+#colorspan{
+    color: #A59678;
+}
+
+.hero-paragraph{
+    text-align;
+
+}
+
+
+.hero-btn{
+    background-color: #c8f58c;
+    color: white;
+    margin-top: 3em;
+    font-size: 1.2em;
+    border-radius: 50px;
+    padding: 0.5em;
+    width: 250px;
+    margin-bottom: 5em;
+    
+
+}
+
+#btn-text{
+    text-decoration: none;
+    color: #2b4127;
+}
+
+.section1{
+    background-color: #738061;
+    display: flex;
+  
+}
+
+.section1 .container{
+    margin-top: 3em;
+}
+
+.section1-paragraph h1 {
+    font-size: 1.2em;
+    color: #A59678;
+}
+
+.section1-paragraph{
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    margin-bottom: 3em
+}
+
+.girldog{
+    max-width: 250px;
+}
+
+
+.section2 h1{
+    color: #A59678;
+    margin-top: 3em;
+}
+
+.section2-paragraph{
+    text-align: center;
+}
+
+.section2-boxes{
+    background-color: #3B4050;
+    color: white;
+    padding: 1.6em;
+    /* width: 80%; */
+    text-align: center;
+    margin: 2em auto;
+    font-size: 0.8em;
+}
+
+
+footer{
+    background-color: #2b4127;
+    color: white;
+    
+}
+
+.footmenu-paragraph p{
+    font-size: 0.7rem;
+}
+
+.footmenu-minimenus{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.footmenu-minimenus ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    margin-bottom: 3em;
+}
+
+.footmenu-minimenus h6{
+    color: #A59678;
+    text-align: start;
+    width: 100%;
+
+   
+}
+
+.footmenu-minimenus li{
+    margin-bottom: .5rem;
+    text-align: start;
+    font-size: 0.7rem;
+}
+
+@media (min-width: 800px) {
+
+    .nav {
+        padding: 0;
+        margin: 0;
+        visibility: visible;
+        display: flex;
+        height: auto;
+        position: relative;
+        width: 100%;
+        /* border: 3px solid green; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+    }
+        
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .logo{
+        margin-right: 0 auto;
+        /* padding: 1em; */
+        
+        /* border: 3px solid red; */
+    }
+
+    .logo img{
+        max-width: 80px;
+    }
+
+    .container{
+        display: flex;
+        /* border: 3px solid orange; */
+        width: 90%;
+        justify-content: space-between;
+     
+    
+    }
+
+
+    .nav__list{
+        /* border: 3px solid cyan; */
+        margin: 0;
+        margin-top: 7px;
+    }
+    .nav__list--primary{
+        margin-left: 0 auto;
+        display: inline-block;
+    }
+
+    .nav__list--secondary{
+        margin-right: 0 auto ;
+    }
+
+    .nav__item{
+        display: inline-block;
+        align-items: center;
+    }
+
+    .nav__item + .nav__item{
+        margin-left: 0.5em;
+}
+    .hero{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .hero-maintext,
+    .paragraph{
+        /* border: 3px solid orangered; */
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-maintext{
+        padding: 1em;
+        order: 1;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .paragraph{
+        margin: 0;
+       
+            
+    }
+    .hero-paragraph{
+        margin-bottom: 3em;
+      
+    }
+
+    .hero-btn{
+        margin: 0;
+    }
+
+    .section1-paragraph{
+        /* border: 3px solid rgb(114, 250, 159); */
+        padding: 1em;
+    }
+
+    .section1 .container{
+        align-items: flex-start;
+    }
+
+    .section2boxstack{
+        display: block;
+        align-items: flex-start;
+    }
+
+   
+
+    .section2-paragraph{
+       padding: 2em;
+       /* border: 3px solid greenyellow; */
+    }
+    
+    .section2 h1{
+        margin: 0;
+    }
+
+    footer .container{
+        display: block;
+        padding: 3em;
+    }
+
+  
+    .footwrap{
+        display: flex;
+        /* border: 3px solid rgb(228, 228, 32); */
+   
+    }
+
+    .footmenu-minimenus h6{
+        /* color: #A59678; */
+        font-size: 0.7em;
+    }
+        
+    .footmenu-minimenus ul{
+        margin-left: 2em;
+
+    }
+
+
+    .footmenu-paragraph{
+        margin-right: 3em;
+    }
