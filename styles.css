@@ -39,6 +39,7 @@ img{
     margin: 0 auto;
     padding: 1px;
     align-items: center;
+    text-align: center;
     
 }
 
@@ -183,6 +184,12 @@ img{
     background: linear-gradient(#2b4127,green);
     color: rgb(222, 235, 225);
    
+}
+
+.kidsinfield{
+    min-width: 230px;
+    margin: 2rem auto 2rem auto;
+
 }
 
 .hero-maintext{
@@ -430,6 +437,10 @@ form{
     .hero-btn{
         margin: 0;
         
+    }
+
+    .kidsinfield{
+        display: none;
     }
 
     .section1-paragraph{
